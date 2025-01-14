@@ -4,7 +4,7 @@ import Img1 from "../../assets/women/women.png";
 import Img2 from "../../assets/women/women2.jpg";
 import Img3 from "../../assets/women/women3.jpg";
 import Img4 from "../../assets/women/women4.jpg";
-import { FaSter } from "react-icons/fa6";    
+import { FaStar } from "react-icons/fa6";    
  
 const ProductsData = [
     {
@@ -12,39 +12,39 @@ const ProductsData = [
         img: Img1,
         title: "Women Ethnic",
         rating: 5.0,
-        author: "white",
-        aaosDelay: "0", 
+        color: "withe",
+        aosDelay: "0", 
     },
     {
         id: 2,
         img: Img2,
         title: "Women western",
         rating: 4.5,
-        author: "red",
-        aaosDelay: "200", 
+        color: "red",
+        aosDelay: "200", 
     },
     {
         id: 3,
         img: Img3,
         title: "Goggles",
         rating: 4.7,
-        author: "brown",
-        aaosDelay: "100", 
+        color: "brown",
+        aosDelay: "100", 
     },
     {
         id: 4,
         img: Img4,
         title: "Printed T-Shirt ",
         rating: 4.4,
-        author: "yellow",
-        aaosDelay: "0", 
+        color: "yellow",
+        aosDelay: "0", 
     },
     {
         id: 5,
-        img: Img5,
+        img: Img1,
         title: "Fashin T-Shirt",
         rating: 4.5,
-        author: "pink",
+        color: "pink",
         aaosDelay: "0", 
     },
 ]
@@ -65,8 +65,8 @@ const Products = () => {
                       {/* card  section */}
                       {ProductsData.map((data) => (
                           <div data-aos="fade-up"
-                              data-aos-delay={aosDelay}
-                               key={data.id} className='space-y-3'>
+                              data-aos-delay={data.aosDelay}
+                                key={data.id} className='space-y-3'>
                               <img src={data.img} alt=""
                                   className='h-[220px] w-[150px] object-cover rounded-md'
                               />
@@ -74,7 +74,7 @@ const Products = () => {
                                   <h3 className='font-semibold'>{data.title}</h3>
                                   <p className='text-sm text-gray-600'>{data.color}</p>
                                   <div className='flex items-center gap-1'>
-                                      <FaSter className="text-yellow-400" />
+                                      <FaStar className="text-yellow-400" />
                                       <span>{ data.rating}</span>
                                   </div>
                               </div>

@@ -55,10 +55,18 @@ const Hero = () => {
                                        className='text-5xl sm:text-6xl lg:text-7xl font-bold'>
                                        {data.title}
                            </h1>
-                                   <p className='text-sm'>
+                                   <p
+                                       data-aos="zoom-out"
+                                       data-aos-duration="500"
+                                       data-aos-delay="100"
+                                       className='text-sm'>
                                        {data.description}
-                           </p>
-                           <div className="">
+                           </p> 
+                                   <div
+                                   data-aos="zoom-out"
+                                       data-aos-duration="500"
+                                       data-aos-delay="300"
+                                   >
                                <button
                                className='bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white py-2 px-4 rounded-full'>
                                    Order New
@@ -67,7 +75,10 @@ const Hero = () => {
                        </div>
                        {/* image section */}
                        <div className="order-1 sm:order-2">
-                           <div className="">
+                                   <div
+                                       data-aos="zoom-in"
+                                       data-aos-once="true"
+                                   className='relative z-10'>
                                <img
                                    src={data.img}
                                    alt=""

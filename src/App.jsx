@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './Components/Navbar/Navbar';
 import Hero from './Components/Hero/Hero';
 import Products from './Components/Products/Products';
+import TopProducts from './Components/TopProducts/TopProducts';
 import "./index.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -24,7 +25,7 @@ const App = () => {
       <Navbar />
       <Hero />
       <Products />
-
+      <TopProducts/>
     </div>
   )
 }
