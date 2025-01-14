@@ -5,7 +5,7 @@ import Img2 from "../../assets/women/women2.jpg";
 import Img3 from "../../assets/women/women3.jpg";
 import Img4 from "../../assets/women/women4.jpg";
 import { FaSter } from "react-icons/fa6";    
-
+ 
 const ProductsData = [
     {
         id: 1,
@@ -54,9 +54,9 @@ const Products = () => {
           <div className='container'>
               {/* Header section */}
               <div className='text-center mb-10 max-w-[600px] mx-auto'>
-                  <p className='text-sm text-primary'>Top Selling Products for you</p>
-                  <h1 className='text-3xl fond-bold'>Products</h1>
-                  <p className='text-xs text-gray-400'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, sint a. Sint.Voluptatum, sint a. Sint.
+                  <p data-aos="fade-up" className='text-sm text-primary'>Top Selling Products for you</p>
+                  <h1 data-aos="fade-up" className='text-3xl fond-bold'>Products</h1>
+                  <p data-aos="fade-up" className='text-xs text-gray-400'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, sint a. Sint.Voluptatum, sint a. Sint.
                   </p>
               </div>
               {/* Body section */}
@@ -64,7 +64,9 @@ const Products = () => {
                   <div className="grid grid-cols-5 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 plase-items-center gap-5">
                       {/* card  section */}
                       {ProductsData.map((data) => (
-                          <div key={data.id} className='space-y-3'>
+                          <div data-aos="fade-up"
+                              data-aos-delay={aosDelay}
+                               key={data.id} className='space-y-3'>
                               <img src={data.img} alt=""
                                   className='h-[220px] w-[150px] object-cover rounded-md'
                               />
