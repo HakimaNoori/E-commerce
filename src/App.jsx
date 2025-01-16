@@ -8,6 +8,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Banner from './Components/Banner/Banner';
+import Subscribe from './Components/Subscribe/Subscribe';
+import Testimonials from './Components/Testimonials/Testimonials';
+import Footer from './Components/Footer/Footer';
 
 const App = () => {
 
@@ -25,7 +29,12 @@ const App = () => {
       <Navbar />
       <Hero />
       <Products />
-      <TopProducts/>
+      <TopProducts />
+      <Banner />
+      <Subscribe />
+      <Products />
+      <Testimonials />
+      <Footer/>
     </div>
   )
 }
