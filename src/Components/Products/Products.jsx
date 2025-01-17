@@ -47,7 +47,7 @@ const ProductsData = [
         color: "pink",
         aaosDelay: "0", 
     },
-]
+] 
 const Products = () => {
   return (
       <div className='mt-14 mb-12'>
@@ -61,7 +61,7 @@ const Products = () => {
               </div>
               {/* Body section */}
               <div>
-                  <div className="grid grid-cols-5 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 plase-items-center gap-5">
+                  <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 place-items-center gap-5">
                       {/* card  section */}
                       {ProductsData.map((data) => (
                           <div data-aos="fade-up"
